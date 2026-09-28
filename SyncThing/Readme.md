@@ -13,9 +13,11 @@
 
 ## Windows App Service
 
-I found a way to deploy **Syncthing as an App Service in Windows**, allowing it to run automatically in the background without requiring a user to manually start the application.
+This project documents my approach for deploying **Syncthing as a Windows App Service**.
 
-This makes Syncthing a great fit for:
+While Syncthing's official documentation covers running Syncthing as a Windows service, the specific deployment method used in this project is my own implementation and is not provided as an official Syncthing deployment method.
+
+The goal is to have Syncthing run automatically in the background as a Windows service, making it suitable for:
 
 - Windows servers
 - Home labs
@@ -23,10 +25,9 @@ This makes Syncthing a great fit for:
 - Always-on PCs
 - Automated file synchronization
 
-The goal of this repository is to document the setup and deployment process.
-
 ## Resources
 
 - [Syncthing](https://syncthing.net/)
-- [Documentation](https://docs.syncthing.net/)
-- [GitHub](https://github.com/syncthing/syncthing)
+- [Official Documentation](https://docs.syncthing.net/)
+- [Syncthing GitHub](https://github.com/syncthing/syncthing)
+
