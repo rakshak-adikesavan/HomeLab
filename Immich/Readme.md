@@ -1,21 +1,54 @@
-# Immich
+Immich — Self-Hosted Photo Server
 
-Self-hosted photo and video management with automatic backup and organization.
+A self-hosted Immich server running on old hardware, using an NVIDIA GPU for CUDA-accelerated machine learning.
 
-## 🚀 Features
-- Automatic photo and video backup
-- Web and mobile access
-- Photo organization and search
-- Self-hosted with Docker
-- Private and secure storage
+🏠 Why Immich?
 
-## ▶️ Usage
-1. Configure the Immich Docker Compose file.
-2. Set the storage location.
-3. Start the containers:
-   `docker compose up -d`
-4. Open Immich and start uploading your photos and videos.
+🔒 Private, self-hosted photo storage
 
-### Additional Configuration
+📱 Automatic phone backup
 
-- Enabled hardware transcoding using NVIDIA CUDA/GPU for faster video processing.
+👤 Face detection & recognition
+
+🔎 Smart search and organization
+
+⚡ NVIDIA CUDA acceleration
+
+♻️ Reusing old hardware
+
+🖥️ Hardware
+Old PC
+├── SSD → OS + Docker + Redis
+├── HDD → Photos & Videos
+└── NVIDIA GPU → CUDA / Machine Learning
+
+
+Keeping Redis and the application stack on the SSD helps responsiveness, while the large HDD provides inexpensive storage for the photo library.
+
+⚡ CUDA
+
+The NVIDIA GPU is passed to Immich's Machine Learning container for accelerated ML workloads such as face detection.
+
+nvidia-smi
+
+💾 Storage
+SSD
+├── OS
+├── Docker
+└── Redis / Immich services
+
+HDD
+└── 📸 Photos & Videos
+
+
+Self-hosted ≠ backed up. Keep a separate backup of important photos.
+
+🚀 Deployment
+
+Immich runs with Docker Compose.
+
+https://immich.app/docs
+
+🎯 Goal
+
+Turn old hardware into a private Google Photos alternative — CUDA-powered face detection, SSD-backed services, and photos stored on large HDDs.
