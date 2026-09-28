@@ -1,4 +1,4 @@
-Immich — Self-Hosted Photo Server
+Immich - Self-Hosted Photo Server
 
 A self-hosted Immich server running on old hardware, using an NVIDIA GPU for CUDA-accelerated machine learning.
 
@@ -18,8 +18,11 @@ A self-hosted Immich server running on old hardware, using an NVIDIA GPU for CUD
 
 🖥️ Hardware
 Old PC
+
 ├── SSD → OS + Docker + Redis
+
 ├── HDD → Photos & Videos
+
 └── NVIDIA GPU → CUDA / Machine Learning
 
 
@@ -33,11 +36,15 @@ nvidia-smi
 
 💾 Storage
 SSD
+
 ├── OS
+
 ├── Docker
+
 └── Redis / Immich services
 
 HDD
+
 └── 📸 Photos & Videos
 
 
@@ -51,4 +58,4 @@ https://immich.app/docs
 
 🎯 Goal
 
-Turn old hardware into a private Google Photos alternative — CUDA-powered face detection, SSD-backed services, and photos stored on large HDDs.
+Turn old hardware into a private Google Photos alternative - CUDA-powered face detection, SSD-backed services, and photos stored on large HDDs.
