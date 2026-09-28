@@ -1,0 +1,2 @@
+
+docker run -d --name tailscale --privileged -e TS_AUTH_KEY="key" -e TS_STATE_DIR="/var/lib/tailscale" -e TS_ROUTES="192.168.0.0/24" -e TS_HOSTNAME="peacekeeper" -v C:\path\to\tun:/dev/net/tun -v C:\path\to\lib:/var/lib --restart=unless-stopped tailscale/tailscale:latest 
