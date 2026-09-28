@@ -1,0 +1,27 @@
+services:
+
+  tailscale:
+
+    container_name: tailscale
+    image: tailscale/tailscale:latest
+
+    volumes:
+
+      - ./tun:/dev/net/tun
+      - ./lib:/var/lib
+
+    environment:
+
+      - TS_AUTH_KEY=key
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_ROUTES=192.168.0.0/24
+      - TS_HOSTNAME=peacekeeper
+      - restart=unless-stopped 
+
+    network_mode: host
+    privileged: true
+
+______________________________________________________
+cmd
+------------------------------------------------------
+docker run -d --name tailscale --privileged -e TS_AUTH_KEY="key" -e TS_STATE_DIR="/var/lib/tailscale" -e TS_ROUTES="192.168.0.0/24" -e TS_HOSTNAME="peacekeeper" -v C:\path\to\tun:/dev/net/tun -v C:\path\to\lib:/var/lib --restart=unless-stopped tailscale/tailscale:latest 
