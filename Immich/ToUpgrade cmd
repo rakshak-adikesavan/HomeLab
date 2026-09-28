@@ -1,0 +1,13 @@
+To update, check latest release version in .env version and update accordingly
+
+
+_________________________________
+
+use the below in cmd to upgrade 
+_________________________________
+
+docker compose pull
+
+docker compose up -d
+
+docker image prune
