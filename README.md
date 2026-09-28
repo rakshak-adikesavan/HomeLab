@@ -4,10 +4,10 @@ A collection of self-hosted services running in my home lab, focused on privacy,
 
 ## Services
 
-- **Immich** — Self-hosted photo and video management
-- **Pi-hole** — Network-wide DNS filtering and ad blocking
-- **Syncthing** — Peer-to-peer file synchronization
-- **Tailscale** — Secure private networking and remote access
+- **Immich** - Self-hosted photo and video management
+- **Pi-hole** - Network-wide DNS filtering and ad blocking
+- **Syncthing** - Peer-to-peer file synchronization
+- **Tailscale** - Secure private networking and remote access
 
 ## Overview
 
